@@ -232,24 +232,7 @@ response = requests.post(
 print(json.dumps(response.json(), indent=2))
 ```
 
-**Option B: Using curl (PowerShell)**
-
-```powershell
-$body = @{
-    total_spent = 1250.50
-    num_orders = 8
-    avg_order_value = 156.31
-    days_since_first_purchase = 180
-    days_since_last_purchase = 15
-    category_diversity = 3
-    purchase_frequency = 0.4
-    monthly_spending = 200
-} | ConvertTo-Json
-
-Invoke-RestMethod -Uri "http://localhost:5000/predict" -Method Post -Body $body -ContentType "application/json"
-```
-
-**Option C: Using Browser**
+**Option B: Using Browser**
 
 Visit: `http://localhost:5000` to see API documentation
 
@@ -484,8 +467,7 @@ This project is open source and available under the MIT License.
 
 **Egor Borodkin**
 - Email: eg.borodkin@gmail.com
-- LinkedIn: [Your LinkedIn Profile]
-- GitHub: [Your GitHub Profile]
+- LinkedIn: (https://www.linkedin.com/in/egor-borodkin-801230346/)
 
 ## 🙏 Acknowledgments
 
